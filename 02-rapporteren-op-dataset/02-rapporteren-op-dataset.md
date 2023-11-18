@@ -31,13 +31,13 @@ Power BI kan als volledige "self-service" tool gebruikt worden, maar ook inprikk
 Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen Power BI-omgeving klaarzetten. Neem daarvoor de volgende stappen:
 
 1. Open het bestand [dataset.pbix](https://learningresourcestorage.blob.core.windows.net/jorik/PowerBI_politie/dataset.pbix)
-1. Klik op de knop **Publish**  
-   ![Klik op de Publish-knop](img/00-prep-publishdataset.png)  
-   Het venster **Publish to Power BI** opent zich nu, en vraagt je om een *workspace* te selecteren om je publicatie in te doen.
-1. Kies hier voor **My workspace**, en klik op **Select**:  
-   ![Kies voor My Workspace](img/00-01-select-my-workspace.png)  
-   Als het goed is verschijnt er een groen vinkje en de tekst **Success!**
-1. Sluit het venster door op de knop **Got it** te klikken
+1. Klik op de knop **Publiceren**  
+   ![Klik op de Publiceren-knop](img/00-prep-publiceerdataset.png)  
+   Het venster **Publiceren naar Power BI** opent zich nu, en vraagt je om een *Werkruimte* te selecteren om je publicatie in te doen.
+1. Kies hier voor **Mijn Werkruimte**, en klik op **Selecteren**:  
+   ![Kies voor My Workspace](img/01-selecteer-mijn-werkruimte.png)  
+   Als het goed is verschijnt er een groen vinkje en de tekst **Voltooid**
+1. Sluit het venster door op de knop **OK** te klikken
 1. Sluit het Power BI venster
 
   **Let op: het is belangrijk dat je geen Power BI-vensters meer open hebt staan na deze stappen!**
