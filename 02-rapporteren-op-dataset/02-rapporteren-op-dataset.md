@@ -113,7 +113,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Selecteer deze grafiek.
 1. Verander de **Filters op deze visual** voor **Regio naam** in een **Populairste N** filter
 
-  ![Top N filtering](img/08-top-n-filter.png)
+  ![Top N filtering](img/08-populairste-n-filter.png)
 
 1. Filter deze op de top 6, sleep het veld "**Aantal geregistreerde misdaden** naar het kopje **Op waarde**.
 1. Klik **Filter toepassen**
