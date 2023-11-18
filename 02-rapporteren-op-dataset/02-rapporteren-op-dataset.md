@@ -56,7 +56,8 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
   > ## De casus
   >
-  > In deze cursus kijken we naar  een voorbeelddataset met misdaden die in [Kaggle](https://www.kaggle.com/datasets/maxscheijen/dutch-crimes/data) beschikbaar is gesteld. Het betreft registraties per gemeente en type misdaad
+  > In deze cursus kijken we naar  een voorbeelddataset met misdaden die in [Kaggle](https://www.kaggle.com/datasets/maxscheijen/dutch-crimes/data) beschikbaar is gesteld. Het betreft registraties per gemeente en type misdaad. Dit hebben we aangevuld met geografische context over provoncies en regio's uit een openData dataset van het CBS.
+
   ## Eerste visualisatie
 
   Doordat we ingeprikt hebben op een bestaande dataset, kunnen we gebruikmaken van kwalitatief hoogstaande data. Deze is al gecontroleerd op missende waarden, inconsistentie en andere zaken waar we vaak tegenaan lopen wanneer we zelf data inladen. Ook is in het datamodel aangegeven hoe de verschillende relaties tussen de tabellen liggen, en zijn er meestal *measures* aangemaakt waarin berekeningen "klaarstaan" die voor onszelf vaak lastiger zijn. We kunnen dus eenvoudig data uit meerdere tabellen combineren - de dataset zorgt voor de juiste interacties.
