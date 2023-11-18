@@ -12,7 +12,7 @@ Binnen Power BI zitten veel mogelijkheden om de weergave en werking van je rappo
 
 Zoals je in [de vorige module](../02-rapporteren-op-dataset/02-rapporteren-op-dataset.md) gezien hebt, is er binnen Power BI automatisch *interactie* tussen de grafieken. Wanneer je op één grafiek klikt, heeft dit effect op een andere grafiek:
 
-![Interactie tussen grafieken](img/01-interactie-tussen-grafieken.png)
+![Interactie tussen grafieken](img/01-interactie-tussen-grafieken.gif)
 
 * Selecteer nu de rechtergrafiek op **Pagina 1** (*Aantal klachten ingediend per Misdaad code en Regio naam*).
 
@@ -22,7 +22,7 @@ Op het moment dat je een grafiek selecteert, verschijnen er bovenin het scherm t
 
 Je ziet nu in je rapport rechtsboven elk object waar data in zit *behalve de huidig geselecteerde grafiek* één of meer van de volgende icoontjes verschijnen:
 
-![Interaction Icons](img/04-interaction-options.png)
+![Interaction Icons](img/04-interactie-opties.png)
 
 Dit bepaalt hoe de bewuste grafiek zal reageren wanneer je de door jou geselecteerde grafiek van selectie verandert:
 
