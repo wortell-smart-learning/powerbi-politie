@@ -40,72 +40,72 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Sluit het venster door op de knop **OK** te klikken
 1. Sluit het Power BI venster
 
-  **Let op: het is belangrijk dat je geen Power BI-vensters meer open hebt staan na deze stappen!**
+    **Let op: het is belangrijk dat je geen Power BI-vensters meer open hebt staan na deze stappen!**
 
-  ## Verbinding maken met de Power BI Dataset
+    ## Verbinding maken met de Power BI Dataset
 
-  Je hebt zojuist een Power BI dataset voor jezelf klaargezet. Dit was een stukje voorbereiding dat we nu zelf moesten doen, maar normaal gesproken kan dit ook door iemand anders gebeuren. Bijvoorbeeld door iemand uit een Business 
-  Intelligence- of Data Engineering-team, die data heeft klaargezet die breed gebruikt wordt op diverse plekken in de organisatie.
+    Je hebt zojuist een Power BI dataset voor jezelf klaargezet. Dit was een stukje voorbereiding dat we nu zelf moesten doen, maar normaal gesproken kan dit ook door iemand anders gebeuren. Bijvoorbeeld door iemand uit een Business 
+    Intelligence- of Data Engineering-team, die data heeft klaargezet die breed gebruikt wordt op diverse plekken in de organisatie.
 
 1. Open **Power BI Desktop**
 1. Maak verbinding met een **Power BI Dataset**:
-   * Klik op het pijltje onder "Get Data"
-   * Kies **Power BI Datasets**
-   * Kies het model **dataset**
-   * Klik op **Connect**
+    * Klik op het pijltje onder "Get Data"
+    * Kies **Power BI Datasets**
+    * Kies het model **dataset**
+    * Klik op **Connect**
 
-  > ## De casus
-  >
-  > In deze cursus kijken we naar  een voorbeelddataset met misdaden die in [Kaggle](https://www.kaggle.com/datasets/maxscheijen/dutch-crimes/data) beschikbaar is gesteld. Het betreft registraties per gemeente en type misdaad. Dit hebben we aangevuld met geografische context over provoncies en regio's uit een openData dataset van het CBS.
+    > ## De casus
+    >
+    > In deze cursus kijken we naar  een voorbeelddataset met misdaden die in [Kaggle](https://www.kaggle.com/datasets/maxscheijen/dutch-crimes/data) beschikbaar is gesteld. Het betreft registraties per gemeente en type misdaad. Dit hebben we aangevuld met geografische context over provoncies en regio's uit een openData dataset van het CBS.
 
-  ## Eerste visualisatie
+    ## Eerste visualisatie
 
-  Doordat we ingeprikt hebben op een bestaande dataset, kunnen we gebruikmaken van kwalitatief hoogstaande data. Deze is al gecontroleerd op missende waarden, inconsistentie en andere zaken waar we vaak tegenaan lopen wanneer we zelf data inladen. Ook is in het datamodel aangegeven hoe de verschillende relaties tussen de tabellen liggen, en zijn er meestal *measures* aangemaakt waarin berekeningen "klaarstaan" die voor onszelf vaak lastiger zijn. We kunnen dus eenvoudig data uit meerdere tabellen combineren - de dataset zorgt voor de juiste interacties.
+    Doordat we ingeprikt hebben op een bestaande dataset, kunnen we gebruikmaken van kwalitatief hoogstaande data. Deze is al gecontroleerd op missende waarden, inconsistentie en andere zaken waar we vaak tegenaan lopen wanneer we zelf data inladen. Ook is in het datamodel aangegeven hoe de verschillende relaties tussen de tabellen liggen, en zijn er meestal *measures* aangemaakt waarin berekeningen "klaarstaan" die voor onszelf vaak lastiger zijn. We kunnen dus eenvoudig data uit meerdere tabellen combineren - de dataset zorgt voor de juiste interacties.
 
-  In deze eerste verkenning gaan we de data bekijken. Specifiek kijken we naar het **Aantal geregistreerde misdaden** en het **Aantal klachten ingediend**. Om een gevoel te krijgen hoe de data eruit ziet, maken we hier enkele doorsnijdingen mee.
+    In deze eerste verkenning gaan we de data bekijken. Specifiek kijken we naar het **Aantal geregistreerde misdaden** en het **Aantal klachten ingediend**. Om een gevoel te krijgen hoe de data eruit ziet, maken we hier enkele doorsnijdingen mee.
 
-  We gaan nu twee Power BI visualisaties maken:
+    We gaan nu twee Power BI visualisaties maken:
 
-  * Aantal geregistreerde misdaden per Provincie naam
-  * Aantal aanklachten ingediend Misdaden per Gebeurtenis code
+    * Aantal geregistreerde misdaden per Provincie naam
+    * Aantal aanklachten ingediend Misdaden per Gebeurtenis code
 
-  ### Aantal geregistreerde misdaden per Provincie naam
+    ### Aantal geregistreerde misdaden per Provincie naam
 
-  Deze is redelijk eenvoudig:
+    Deze is redelijk eenvoudig:
 
 1. Zoek in het **Gegevens** paneel via de zoekbox de *meting* **Aantal geregistreerde misdaden**. Klik deze aan.  
 1. Zoek nu naar "Provincie", en vink **Provincie naam** aan.
 
-  Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
+    Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
 
-  ### Aantal aanklachten ingediend Misdaden per Gebeurtenis code
+    ### Aantal aanklachten ingediend Misdaden per Gebeurtenis code
 
 1. Probeer nu stappen 8 en 9 opnieuw uit te voeren, maar maak deze keer de grafiek te maken voor **Aantal aanklachten ingediend** en **Gebeurtenis code**
 
-  Omdat "Gebeurtenis code" een numerieke waarde is, maakt Power BI hier automatisch een zogenaamde *meting* van: een meetwaarde die optelbaar is. Je ziet dus de som van alle codes nu weergegeven naast de ingediende aanklachten. Wanneer je het sigma-teken &Sigma; ziet staan voor een veld, is dit een indicatie dat Power BI het als *meting* kan gebruiken (hoewel de dataset het niet expliciet als *meting* heeft aangeboden!)
+    Omdat "Gebeurtenis code" een numerieke waarde is, maakt Power BI hier automatisch een zogenaamde *meting* van: een meetwaarde die optelbaar is. Je ziet dus de som van alle codes nu weergegeven naast de ingediende aanklachten. Wanneer je het sigma-teken &Sigma; ziet staan voor een veld, is dit een indicatie dat Power BI het als *meting* kan gebruiken (hoewel de dataset het niet expliciet als *meting* heeft aangeboden!)
 
 1. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
 1. Verplaats nu in de **Eigenschappen** van de grafiek (onder het **Visualisaties** paneel) het veld **Gebeurtenis code** van het kopje **Y-as** naar **X-as**.
 
-  Hiermee geven we aan dat "Gebeurtenis code" niet een veld is dat we willen optellen, maar dat we op de as willen zetten, om erlangs uit te splitsen.
-  We kunnen dit ook expliciet aangeven door het direct vanuit het **Gegevens** paneel  naar de goede eigenschap van de visualisatie te slepen, in plaat van het aan te klikken.
+    Hiermee geven we aan dat "Gebeurtenis code" niet een veld is dat we willen optellen, maar dat we op de as willen zetten, om erlangs uit te splitsen.
+    We kunnen dit ook expliciet aangeven door het direct vanuit het **Gegevens** paneel  naar de goede eigenschap van de visualisatie te slepen, in plaat van het aan te klikken.
 
 1. Vervang nu de **Gebeurtenis code** in de visualisatie door **Misdaad code**.
    
-  Stel dat we nu een extra uitsplitsing zouden willen doen naar de regio. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
+    Stel dat we nu een extra uitsplitsing zouden willen doen naar de regio. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
   
 1. Sleep het veld **Regio naam** vanuit het **Gegevens** paneel naar het kopje **Legenda**
 1. *Resize* de grafiek zodat deze netjes wordt weergegeven:
 
-  ## Interactie tussen grafieken
+    ## Interactie tussen grafieken
 
-  Klik op één van de provincie's in de eerste grafiek. Zoals je ziet verandert de andere grafiek mee.
+    Klik op één van de provincie's in de eerste grafiek. Zoals je ziet verandert de andere grafiek mee.
 
-  ## Hands-on: rapportage maken
+    ## Hands-on: rapportage maken
 
-  Aangezien Power BI nieuw is binnen de politie, is je leidinggevende bijzonder benieuwd wat er allemaal mee mogelijk is. Hij heeft onder andere veel gehoord over de geografische weergaves die er standaard in aanwezig zijn, en heeft jou gevraagd eens één en ander mee uit te proberen.
+    Aangezien Power BI nieuw is binnen de politie, is je leidinggevende bijzonder benieuwd wat er allemaal mee mogelijk is. Hij heeft onder andere veel gehoord over de geografische weergaves die er standaard in aanwezig zijn, en heeft jou gevraagd eens één en ander mee uit te proberen.
 
-  Hieronder staan op een iets hoger niveau de stappen om een rapport te maken. Dit is bewust (zodat je ervaring met de tool vergroot wordt) - maar tegelijkertijd is het heel normaal dat je ergens niet uitkomt. Dan helpt het niet om lang te zitten tobben - vraag gerust om hulp!
+    Hieronder staan op een iets hoger niveau de stappen om een rapport te maken. Dit is bewust (zodat je ervaring met de tool vergroot wordt) - maar tegelijkertijd is het heel normaal dat je ergens niet uitkomt. Dan helpt het niet om lang te zitten tobben - vraag gerust om hulp!
 
 1. Maak een nieuwe pagina, genaamd 'Geregistreerde misdaden'
 1. Schakel naar deze nieuwe pagina
@@ -113,7 +113,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Selecteer deze grafiek.
 1. Verander de **Filters op deze visual** voor **Regio naam** in een **Populairste N** filter
 
-  ![Top N filtering](img/08-populairste-n-filter.png)
+    ![Top N filtering](img/08-populairste-n-filter.png)
 
 1. Filter deze op de top 6, sleep het veld "**Aantal geregistreerde misdaden** naar het kopje **Op waarde**.
 1. Klik **Filter toepassen**
@@ -128,16 +128,16 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Voeg nu een titel toe aan de pagina, door een **Tekstvak** te kiezen uit het **Start** lint. Maak deze tekst groter (bijv. 32), en vul de tekst **Geregistreerde misdaden** in. Plaats deze volledig linksbovenin het rapport
 1. Voeg een **Kaart visual** toe (icoontje met 123) voor het veld **Aantal geregistreerde misdaden** en voeg in de opmaak de titel **Selectie** toe
 
-  > Om te ontdekken wat een **Kaart** visual is, zul je de namen van de tooltips moeten verkennen. De naam van een visual wordt weergegeven als *tooltip* wanneer je de cursor er enige tijd op laat rusten:
-  >
-  > ![Voorbeeld van een tooltip](img/08b-tooltip.png)
+    > Om te ontdekken wat een **Kaart** visual is, zul je de namen van de tooltips moeten verkennen. De naam van een visual wordt weergegeven als *tooltip* wanneer je de cursor er enige tijd op laat rusten:
+    >
+    > ![Voorbeeld van een tooltip](img/08b-tooltip.png)
 
 1. Voeg nu een **Slicer visual** toe en baseer het op **Regio naam**. Pas in de opmaak van de visual de weergave aan tot **Vervolgkeuzelijst**. 
 1. Maak de pagina af met een willekeurig bedrijfslogo linksbovenin (je kunt hier bijvoorbeeld het Politie-logo opzoeken, of je eigen plaatje naar keuze)
 
-Het eindresultaat kan er bijvoorbeeld als volgt uit zien:
+    Het eindresultaat kan er bijvoorbeeld als volgt uit zien:
 
-![Eindresultaat eerste rapport](img/05-eindresultaat.png)
+    ![Eindresultaat eerste rapport](img/05-eindresultaat.png)
 
 ## Volgende modules
 
