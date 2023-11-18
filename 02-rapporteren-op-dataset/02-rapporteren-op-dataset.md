@@ -30,7 +30,7 @@ Power BI kan als volledige "self-service" tool gebruikt worden, maar ook inprikk
 
 Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen Power BI-omgeving klaarzetten. Neem daarvoor de volgende stappen:
 
-1. Open het bestand [AdventureWorks.pbix](AdventureWorks.pbix)
+1. Open het bestand [dataset.pbix](https://learningresourcestorage.blob.core.windows.net/jorik/PowerBI_politie/dataset.pbix)
 1. Klik op de knop **Publish**  
    ![Klik op de Publish-knop](img/00-prep-publishdataset.png)  
    Het venster **Publish to Power BI** opent zich nu, en vraagt je om een *workspace* te selecteren om je publicatie in te doen.
@@ -40,141 +40,103 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Sluit het venster door op de knop **Got it** te klikken
 1. Sluit het Power BI venster
 
-**Let op: het is belangrijk dat je geen Power BI-vensters meer open hebt staan na deze stappen!**
+  **Let op: het is belangrijk dat je geen Power BI-vensters meer open hebt staan na deze stappen!**
 
-## Verbinding maken met de Power BI Dataset
+  ## Verbinding maken met de Power BI Dataset
 
-Je hebt zojuist een Power BI dataset voor jezelf klaargezet. Dit was een stukje voorbereiding dat we nu zelf moesten doen, maar normaal gesproken kan dit ook door iemand anders gebeuren. Bijvoorbeeld door iemand uit een Business Intelligence- of Data Engineering-team, die data heeft klaargezet die breed gebruikt wordt op diverse plekken in de organisatie.
+  Je hebt zojuist een Power BI dataset voor jezelf klaargezet. Dit was een stukje voorbereiding dat we nu zelf moesten doen, maar normaal gesproken kan dit ook door iemand anders gebeuren. Bijvoorbeeld door iemand uit een Business 
+  Intelligence- of Data Engineering-team, die data heeft klaargezet die breed gebruikt wordt op diverse plekken in de organisatie.
 
-{:start="6"}
-6. Open **Power BI Desktop**
-6. Maak verbinding met een **Power BI Dataset**:
+1. Open **Power BI Desktop**
+1. Maak verbinding met een **Power BI Dataset**:
    * Klik op het pijltje onder "Get Data"
    * Kies **Power BI Datasets**
-   * Kies het model **AdventureWorks**
+   * Kies het model **dataset**
    * Klik op **Connect**
 
-![Selecteer dataset AdventureWorks](img/SelectModelFromPBI.png)
+  > ## De casus
+  >
+  > In deze cursus kijken we naar  een voorbeelddataset met misdaden die in [Kaggle](https://www.kaggle.com/datasets/maxscheijen/dutch-crimes/data) beschikbaar is gesteld. Het betreft registraties per gemeente en type misdaad
+  ## Eerste visualisatie
 
-> ## De casus
->
-> In deze cursus kijken we naar een fictief bedrijf dat Microsoft vaak gebruikt als voorbeeld in haar cursussen: **AdventureWorks**.
->
-> AdventureWorks verkoopt fietsen en fietsonderdelen - zowel direct aan klanten als via distributeurs. Ze hebben een kantoor in Nederland, en verkopen fietsen in de V.S., Duitsland en Spanje - zowel via de diverse distributeurs als direct via de website aan klanten.
+  Doordat we ingeprikt hebben op een bestaande dataset, kunnen we gebruikmaken van kwalitatief hoogstaande data. Deze is al gecontroleerd op missende waarden, inconsistentie en andere zaken waar we vaak tegenaan lopen wanneer we zelf data inladen. Ook is in het datamodel aangegeven hoe de verschillende relaties tussen de tabellen liggen, en zijn er meestal *measures* aangemaakt waarin berekeningen "klaarstaan" die voor onszelf vaak lastiger zijn. We kunnen dus eenvoudig data uit meerdere tabellen combineren - de dataset zorgt voor de juiste interacties.
 
-## Eerste visualisatie
+  In deze eerste verkenning gaan we de data bekijken. Specifiek kijken we naar het **Aantal geregistreerde misdaden** en het **Aantal klachten ingediend**. Om een gevoel te krijgen hoe de data eruit ziet, maken we hier enkele doorsnijdingen mee.
 
-Doordat we ingeprikt hebben op een bestaande dataset, kunnen we gebruikmaken van kwalitatief hoogstaande data. Deze is al gecontroleerd op missende waarden, inconsistentie en andere zaken waar we vaak tegenaan lopen wanneer we zelf data inladen. Ook is in het datamodel aangegeven hoe de verschillende relaties tussen de tabellen liggen, en zijn er meestal *measures* aangemaakt waarin berekeningen "klaarstaan" die voor onszelf vaak lastiger zijn. We kunnen dus eenvoudig data uit meerdere tabellen combineren - de dataset zorgt voor de juiste interacties.
+  We gaan nu twee Power BI visualisaties maken:
 
-In deze eerste verkenning gaan we data van AdventureWorks bekijken. Specifiek kijken we naar de **Internet Total Sales** (het totaalbedrag aan verkopen via internet) en de **Internet Total Tax amt** (de hoeveelheid belasting die ze afdragen via internetverkopen). Om een gevoel te krijgen hoe de data eruit ziet, maken we hier enkele doorsnijdingen mee.
+  * Aantal geregistreerde misdaden per Provincie naam
+  * Aantal aanklachten ingediend Misdaden per Gebeurtenis code
 
-We gaan nu twee Power BI visualisaties maken:
+  ### Aantal geregistreerde misdaden per Provincie naam
 
-* Internet Total Sales per Country Region Name
-* Internet Total Tax amt per Total Children
+  Deze is redelijk eenvoudig:
 
-### Internet Total Sales per Country Region Name
+1. Zoek in het **Gegevens** paneel via de zoekbox de *meting* **Aantal geregistreerde misdaden**. Klik deze aan.  
+1. Zoek nu naar "Provincie", en vink **Provincie naam** aan.
 
-Deze is redelijk eenvoudig:
+  Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
 
-{:start="8"}
-8. Zoek in het **Data** pane via de zoekbox de *measure* **Internet Total Sales**. Klik deze aan.  
-   ![Search box for fields in Power BI](img/internet-total-sales-searchbox.png)
-9. Zoek nu naar "Country", en vink **Country Region Name** aan.
+  ### Aantal aanklachten ingediend Misdaden per Gebeurtenis code
 
-Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
+1. Probeer nu stappen 8 en 9 opnieuw uit te voeren, maar maak deze keer de grafiek te maken voor **Aantal aanklachten ingediend** en **Gebeurtenis code**
 
-### Internet Total Tax per Total Children
+  Omdat "Gebeurtenis code" een numerieke waarde is, maakt Power BI hier automatisch een zogenaamde *meting* van: een meetwaarde die optelbaar is. Je ziet dus de som van alle codes nu weergegeven naast de ingediende aanklachten. Wanneer je het sigma-teken &Sigma; ziet staan voor een veld, is dit een indicatie dat Power BI het als *meting* kan gebruiken (hoewel de dataset het niet expliciet als *meting* heeft aangeboden!)
 
-{:start="10"}
-10. Probeer nu stappen 8 en 9 opnieuw uit te voeren, maar maak deze keer de grafiek te maken voor **Internet Total Tax Amt** (de hoeveelheid betaalde BTW voor internetverkopen) en **Total Children** (het aantal kinderen dat een klant heeft)
+1. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
+1. Verplaats nu in de **Eigenschappen** van de grafiek (onder het **Visualisaties** paneel) het veld **Gebeurtenis code** van het kopje **Y-as** naar **X-as**.
 
-![Total Children verkeerd weergegeven](img/01-total-children-wrong.png)
+  Hiermee geven we aan dat "Gebeurtenis code" niet een veld is dat we willen optellen, maar dat we op de as willen zetten, om erlangs uit te splitsen.
+  We kunnen dit ook expliciet aangeven door het direct vanuit het **Gegevens** paneel  naar de goede eigenschap van de visualisatie te slepen, in plaat van het aan te klikken.
 
-Omdat *Total Children* een numerieke waarde is, maakt Power BI hier automatisch een zogenaamde *measure* van: een meetwaarde die optelbaar is. Je ziet dus de som van alle kinderen van alle klanten nu weergegeven naast de betaalde belasting. Wanneer je het sigma-teken &Sigma; ziet staan voor een veld, is dit een indicatie dat Power BI het als *measure* kan gebruiken (hoewel de dataset het niet expliciet als *measure* heeft aangeboden!)
+1. Vervang nu de **Gebeurtenis code** in de visualisatie door **Misdaad code**.
+   
+  Stel dat we nu een extra uitsplitsing zouden willen doen naar de regio. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
+  
+1. Sleep het veld **Regio naam** vanuit het **Gegevens** paneel naar het kopje **Legenda**
+1. *Resize* de grafiek zodat deze netjes wordt weergegeven:
 
-![Het sigma-teken duidt een *measure* aan](img/01b-measure-sign.png)
+  ## Interactie tussen grafieken
 
-{:start="11"}
-11. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
-12. Verplaats nu in de **Eigenschappen** van de grafiek (onder de **visualizations** pane) het veld **Total Children** van het kopje **Value** naar **Axis**.
+  Klik op één van de provincie's in de eerste grafiek. Zoals je ziet verandert de andere grafiek mee.
 
-![Total Children veld naar juiste plek brengen](img/02-total-children-to-axis.png)
+  ## Hands-on: rapportage maken
 
-Hiermee geven we aan dat "Total Children" niet een veld is dat we willen optellen, maar dat we op de as willen zetten, om erlangs uit te splitsen. Het resultaat is nu als volgt:
+  Aangezien Power BI nieuw is binnen de politie, is je leidinggevende bijzonder benieuwd wat er allemaal mee mogelijk is. Hij heeft onder andere veel gehoord over de geografische weergaves die er standaard in aanwezig zijn, en heeft jou gevraagd eens één en ander mee uit te proberen.
 
-![Total Children correct weergegeven](img/03-total-children-correct.png)
+  Hieronder staan op een iets hoger niveau de stappen om een rapport te maken. Dit is bewust (zodat je ervaring met de tool vergroot wordt) - maar tegelijkertijd is het heel normaal dat je ergens niet uitkomt. Dan helpt het niet om lang te zitten tobben - vraag gerust om hulp!
 
-Stel dat we nu een extra uitsplitsing zouden willen doen naar het aantal kinderen dat nog thuis is (*Number of Children at Home*), dan zien we in de Data-lijst ook hier een sigma-teken voor staan. 
+1. Maak een nieuwe pagina, genaamd 'Geregistreerde misdaden'
+1. Schakel naar deze nieuwe pagina
+1. Maak een grafiek waarin je het **Aantal geregistreerde misdaden** uitzet tegen de *Regio naam** (*neem deze uit de dimensie Geografie*!)
+1. Selecteer deze grafiek.
+1. Verander de **Filters op deze visual** voor **Regio naam** in een **Populairste N** filter
 
-![Implicit Measure voor children at home](img/04-sigma-children-at-home.png)
-We kunnen er echter ook expliciet aangeven hoe Power BI dit veld toevoegt aan een grafiek:
+  ![Top N filtering](img/08-top-n-filter.png)
 
-{:start="13"}
-13. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
-14. Sleep het veld **Number of Children at Home** vanuit de **Data** lijst naar het kopje **Legend**
-    ![Sleep Number of Children at Home direct naar Legend](img/05-sleep-children-at-home.png)
-15. *Resize* de grafiek zodat deze netjes wordt weergegeven:
+1. Filter deze op de top 6, sleep het veld "**Aantal geregistreerde misdaden** naar het kopje **Op waarde**.
+1. Klik **Filter toepassen**
+1. Probeer nu zelf een **Kaart visual** toe te voegen (dit is het "witte" wereldbolletje onder **Visualisaties**). Zet hierin de **Gemeente naam met land** uit tegen **Aantal geregistreerde misdaden**. Maak de grafiek vervolgens breed genoeg zodat alle gemeentes waar geregistreerd zijn duidelijk zichtbaar zijn.
+1. Voeg nu een **Tabel visual** toe met daarin de volgende velden:
+    * **Regio naam**
+    * **Gemeente naam**
+    * **Aantal geregistreerde misdaden**
+    * **Aantal aanklachten ingediend**
+    * **Aantal aanklachten ingediend online**
+1. Plaats de grafiek en tabel direct onder elkaar, en maak ze exact even breed.
+1. Voeg nu een titel toe aan de pagina, door een **Tekstvak** te kiezen uit het **Start** lint. Maak deze tekst groter (bijv. 32), en vul de tekst **Geregistreerde misdaden** in. Plaats deze volledig linksbovenin het rapport
+1. Voeg een **Kaart visual** toe (icoontje met 123) voor het veld **Aantal geregistreerde misdaden** en voeg in de opmaak de titel **Selectie** toe
 
-![Children at Home - resultaat](img/06-children-at-home-correct.png)
+  > Om te ontdekken wat een **Kaart** visual is, zul je de namen van de tooltips moeten verkennen. De naam van een visual wordt weergegeven als *tooltip* wanneer je de cursor er enige tijd op laat rusten:
+  >
+  > ![Voorbeeld van een tooltip](img/08b-tooltip.png)
 
-## Interactie tussen grafieken
-
-Klik op één van de landen in de eerste grafiek. Zoals je ziet verandert de andere grafiek mee.
-
-![Interactie tussen grafieken](img/07-interactie-tussen-grafieken.png)
-
-## Hands-on: rapportage maken
-
-Aangezien Power BI nieuw is binnen Adventure Works, is je leidinggevende bijzonder benieuwd wat er allemaal mee mogelijk is. Hij heeft onder andere veel gehoord over de geografische weergaves die er standaard in aanwezig zijn, en heeft jou gevraagd eens één en ander mee uit te proberen.
-
-Hieronder staan op een iets hoger niveau de stappen om een rapport te maken. Dit is bewust (zodat je ervaring met de tool vergroot wordt) - maar tegelijkertijd is het heel normaal dat je ergens niet uitkomt. Dan helpt het niet om lang te zitten tobben - vraag gerust om hulp!
-
-{:start="16"}
-16. Maak een nieuwe pagina, genaamd 'Product Sales'
-16. Schakel naar deze nieuwe pagina
-16. Maak een grafiek waarin je de **Internet Total Sales** uitzet tegenover *Product Subcategory Name** (*neem deze uit de dimensie Product Subcategory*!)
-16. Selecteer deze grafiek.
-16. Verander de **Filter on this visual** voor **Product Subcategory Name** in een **Top N** filter
-
-![Top N filtering](img/08-top-n-filter.png)
-
-{:start="21"}
-21. Filter deze op de top 6, sleep het veld "**Internet Total Sales** naar het kopje **by value**.
-21. Klik **Apply filter**
-21. Probeer nu zelf een **map visual** toe te voegen (dit is het "witte" wereldbolletje onder **Visualizations**). Zet hierin de **Country Region Name** uit tegen **Internet Total Sales**. Maak de grafiek vervolgens breed genoeg zodat alle landen waar verkocht wordt duidelijk zichtbaar zijn.
-21. Voeg nu een tabel toe met de volgende daarin de volgende velden:
-    * **Country Region Name**
-    * **State Province Name**
-    * **City**
-    * **Internet Total Sales**
-    * **Internet Total Margin**
-21. Plaats de tabel en kaart direct onder elkaar, en maak ze exact even breed.
-21. Voeg nu een titel toe aan de pagina, door een **Text box** te kiezen uit de **Home** ribbon. Maak deze tekst groter (bijv. 32), en vul de tekst **Product Sales** in. Plaats deze volledig linksbovenin het rapport
-21. Voeg drie **Card** visuals toe, voor de volgende velden:
-    * **Internet Total Sales**
-    * **Internet Total Margin**
-    * **Internet Total Units**
-
-> Om te ontdekken wat een **Card** visual is, zul je de namen van de tooltips moeten verkennen. De naam van een visual wordt weergegeven als *tooltip* wanneer je de cursor er enige tijd op laat rusten:
->
-> ![Voorbeeld van een tooltip](img/08b-tooltip.png)
-
-{:start="28"}
-28. Zet de drie **Card** visuals strak naast elkaar direct onder de titel. Verklein de tekst indien nodig.
-28. Maak de pagina af met een willekeurig bedrijfslogo rechtsbovenin (je kunt hier bijvoorbeeld het AdventureWorks-logo opzoeken, of je eigen bedrijfslogo)
+1. Voeg nu een **Slicer visual** toe en baseer het op **Regio naam**. Pas in de opmaak van de visual de weergave aan tot **Vervolgkeuzelijst**. 
+1. Maak de pagina af met een willekeurig bedrijfslogo linksbovenin (je kunt hier bijvoorbeeld het Politie-logo opzoeken, of je eigen plaatje naar keuze)
 
 Het eindresultaat kan er bijvoorbeeld als volgt uit zien:
 
-![Eindresultaat eerste rapport](img/09-eindresultaat-eerste-rapport.png)
-
-## Oplossing
-
-Hier vind je het eindpunt van deze opdracht: [02-Solution](02-Solution.pbit)
-
-## Video
-
-Hier vind je de [Walkthrough video](https://vimeo.com/584747639/0f39be6d96)
+![Eindresultaat eerste rapport](img/05-eindresultaat.png)
 
 ## Volgende modules
 
