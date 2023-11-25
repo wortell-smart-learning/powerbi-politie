@@ -85,7 +85,7 @@ Een andere hiërarchie die in deze dataset aanwezig is, is de *Kalender* hiërar
 
 Wanneer we nu een *drill down* doen op een jaar, komen we eerst bij een semester, en daarna bij een kwartaal. Dat is wel een beetje veel van het goede. Daarom gaan we deze velden (voor deze specifieke grafiek) uit de hiërarchie halen.
 
-* In de eigenschappen van de grafiek, onder *X-as*, verwijder de niveaus **Semester** en **Dagnummer van maand**
+* In de eigenschappen van de grafiek, onder *X-as*, verwijder de niveaus **Semester** en **Dagnummer**
 
 De hiërarchie is nu *in deze grafiek* Jaar-Kwartaal-Maand geworden. Verifieer dit.
 
