@@ -66,9 +66,9 @@ In de datamodellen die we vanuit een dataset of Power BI-model afnemen, wordt da
 
 Rechtsboven in de grafiek bevindt zich de verzameling met pijltjes. Deze zijn bedoeld om door de hiërarchie heen te navigeren.
 
-![Drilldown arrows](img/07-hierarchy-arrows.png)
+![Drilldown pijlen](img/07-hierarchie-pijlen.png)
 
-* Klik op het pijltje naar beneden (![Drilldown arrow](img/08-drilldown-arrow.png)).
+* Klik op het pijltje naar beneden (![Drilldown pijl](img/08-drilldown-pijl.png)).
   * Dit pijltje staat voor *drilldown* (de BI-term voor het "inzoomen" naar een lager niveau)
 * Klik nu op de categorie "Oost-Nederland". Je ziet dat:
   1. De titel van de grafiek verandert naar *Aantal geregistreerde misdaden per Regio naam en Veiligheidsregio naam*
@@ -100,7 +100,7 @@ We kunnen nu via een *drilldown* verder afdalen door de *Geogradie* hiërarchie,
 
 Naast een *drilldown* kun je ook een niveau afdalen in de hiërarchie zonder dat je je specifiek beperkt tot één categorie. Dit kan met de rechter twee knoppen:
 
-![Go to next level buttons](img/11-go-to-next-level-buttons.png)
+![Ga naar het volgende niveau knoppen](img/11-ga-naar-het-volgende-niveau-knoppen.png)
 
 Ga in de linkergrafiek naar het hoogste niveau (dus *Regio naam*), en probeer de laatste twee knoppen uit. Wat is het verschil?
 
