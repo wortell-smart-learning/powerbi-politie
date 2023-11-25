@@ -36,10 +36,10 @@ Verander nu het rapport op de pagina **Geregistreerde misdaden** zodanig dat:
 
 * Een nieuwe kaart (icoontje 123) wordt toegevoegd naast de bestaande **Selectie** o.b.v. meting **Aantal geregistreerde misdaden** met titel "Landelijk".
 * Interactie vanuit de andere visuals naar deze kaart ingesteld staan op **Geen**. Deze cijfers veranderen dus niets, ongeacht je selectie.
-* Wanneer je rechtsonder in de tabel iets selecteert (bijv. "Nijmegen"), wordt de grafiek (*Aantal geregistreerde misdaden per Regio naam*) gefilterd. Hier zijn dus dan alleen de misdaden van die betreffende tabelrij zichtbaar.
+* Wanneer je rechtsonder in de tabel iets selecteert (bijv. "Nijmegen"), wordt de landkaart niet gefilterd (geen interactie). Een selectie vanuit de slicer heeft wel effect op de landkaart. Hier zijn dus dan alleen de misdaden van die betreffende regio('s) zichtbaar.
 
-Controleer de resultaten door "Oost-Nederland" te selecteren in de grafiek. Het landelijke cijfer moet niet veranderen.
-Selecteer in de tabel "Apeldoorn". De grafiek moet nu alleen misdaden in Apeldoorn weergeven.
+Controleer de resultaten door "Oost-Nederland" te selecteren in de grafiek. Het landelijke cijfer moet niet veranderen. De landkaart laat alleen de gemeenten in Oost-Nederland zien.
+Selecteer in de tabel de gemeente "Apeldoorn". De landkaart laat nog steeds heel Oost-Nederland zien. De cijfers van Apeldoorn zijn gemarkeerd in de grafiek. 
 
 ## Hiërarchie en drilldown
 
