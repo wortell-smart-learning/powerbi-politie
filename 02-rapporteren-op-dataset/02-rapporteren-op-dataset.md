@@ -94,7 +94,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
    
     Stel dat we nu een extra uitsplitsing zouden willen doen naar de regio. Zorg er nu voor dat de grafiek die je zojuist gemaakt hebt geselecteerd is.
   
-1. Sleep het veld **Regio naam** vanuit het **Gegevens** paneel naar het kopje **Legenda**
+1. Sleep het veld **Week/weekend** uit tabel **Kalender** vanuit het **Gegevens** paneel naar het kopje **Legenda**
 1. *Resize* de grafiek zodat deze netjes wordt weergegeven:
 
     ## Interactie tussen grafieken
