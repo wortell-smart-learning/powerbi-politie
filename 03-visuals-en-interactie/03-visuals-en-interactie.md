@@ -51,74 +51,68 @@ Veel van de data die we analyseren heeft een hiërarchie in zich:
 * We starten met een analyse van de performance van accountmanagers, kijken daarna specifieker naar de onderliggende klanten
 * We analyseren onze productverkopen per categorie, zien dat de meeste verkopen in fietsen zitten, dus splitsen we die uit in de subcategorieën.
 
-In de datamodellen die we vanuit een dataset of Power BI-model afnemen, wordt data vaak al in een hiërarchie aangeboden. Bijvoorbeeld de Category-hiërarchie in de tabel *Product*:
+In de datamodellen die we vanuit een dataset of Power BI-model afnemen, wordt data vaak al in een hiërarchie aangeboden. Bijvoorbeeld de Geografie-hiërarchie in de tabel *Geografie*:
 
 * Maak een nieuwe pagina
-* Selecteer de *measure* **Internet Total Sales**
-* Selecteer de *hiërarchie* **Category** in de tabel **Product**
-* Klik nu in de visualisatie drie keer op het pijltje naar boven
+* Selecteer de *meting* **Aantal geregistreerde misdaden**
+* Selecteer de *hiërarchie* **Geografie** in de tabel **Geografie**
+* Klik nu in de visualisatie twee keer op het pijltje naar boven (linkerbovenhoek)
 * Bekijk de grafiek-eigenschappen. 
-  * Onder "X-axis" staat *Category*
-  * Je ziet hier diverse niveaus (Category, Subcategory, Model, Product), toch is in de grafiek momenteel enkel het hoogste niveau zichtbaar.
-* Maak de grafiek wat breder, zodat je de volledige titel kunt zien. De titel is momenteel "Internet Total Sales by Category": het zichtbare niveau dus.
-
-![Axis eigenschap grafiek A1](img/06-reportinghierarchy.png)
+  * Onder "X-as" staat *Geografie*
+  * Je ziet hier diverse niveaus (Regio naam, Veiligheidsregio naam, gemeente naam), toch is in de grafiek momenteel enkel het hoogste niveau zichtbaar.
+* Maak de grafiek wat breder, zodat je de volledige titel kunt zien. De titel is momenteel "Aantal geregistreerde misdaden per Regio naam": het zichtbare niveau dus.
 
 ### Drilldown: eerste verkenning
 
-Rechtsboven in de grafiek bevindt zich een verzameling met pijltjes. Deze zijn bedoeld om door de hiërarchie heen te navigeren.
+Rechtsboven in de grafiek bevindt zich de verzameling met pijltjes. Deze zijn bedoeld om door de hiërarchie heen te navigeren.
 
 ![Drilldown arrows](img/07-hierarchy-arrows.png)
 
 * Klik op het pijltje naar beneden (![Drilldown arrow](img/08-drilldown-arrow.png)).
   * Dit pijltje staat voor *drilldown* (de BI-term voor het "inzoomen" naar een lager niveau)
-* Klik nu op de categorie "Bikes". Je ziet dat:
-  1. De titel van de grafiek verandert naar *Internet Total Sales by Category and Subcategory*
-  2. De subcategorieën op het Subcategory-niveau worden weergegeven *die zich binnen Bikes bevinden*
+* Klik nu op de categorie "Oost-Nederland". Je ziet dat:
+  1. De titel van de grafiek verandert naar *Aantal geregistreerde misdaden per Regio naam en Veiligheidsregio naam*
+  2. De Veiligheidsregio's op het Veiligheidsregio naam-niveau worden weergegeven *die zich binnen Oost-Nederland bevinden*
 * Wanneer je weer wilt uitzoomen (*drill up*), klik je op het pijltje naar boven.
 
 ### Meer hiërarchie en drilldown
 
-Een andere hiërarchie die in deze dataset aanwezig is, is de *Calendar* hiërarchie (binnen de tabel **Date**). 
+Een andere hiërarchie die in deze dataset aanwezig is, is de *Kalender* hiërarchie (binnen de tabel **Kalender**). 
 
-* Maak een grafiek waarin de **Internet Total Sales** wordt uitgesplitst over **Calendar**.
+* Maak een grafiek waarin de **Aantal geregistreerde misdaden** wordt uitgesplitst over **Kalender**.
 * *Drilldown* naar het jaar 2020.
-  * De grafiek **Internet Total Sales by Category** filtert nu mee.
+  * De grafiek **Aantal geregistreerde misdaden per Regio naam** filtert nu mee.
 
 Wanneer we nu een *drill down* doen op een jaar, komen we eerst bij een semester, en daarna bij een kwartaal. Dat is wel een beetje veel van het goede. Daarom gaan we deze velden (voor deze specifieke grafiek) uit de hiërarchie halen.
 
-* In de eigenschappen van de grafiek, onder *Axis*, verwijder de niveaus **Semester** en **Quarter**
+* In de eigenschappen van de grafiek, onder *X-as*, verwijder de niveaus **Semester** en **Dagnummer van maand**
 
-De hiërarchie is nu *in deze grafiek* Jaar-Maand-Dag geworden. Verifieer dit.
+De hiërarchie is nu *in deze grafiek* Jaar-Kwartaal-Maand geworden. Verifieer dit.
 
 ### Handmatige hiërarchie
 
-* Selecteer nu opnieuw de linkergrafiek *Internet Total Sales by Category*
-* Sleep vanuit het **Data** *pane* het veld **Country Region Name** uit de tabel **Geography** naar het **Axis** veld. Plaats het veld *boven* de *Category* hiërarchie.
+* Selecteer nu opnieuw de linkergrafiek *Aantal geregistreerde misdaden per Regio naam*
+* Sleep vanuit het **Gegevens** *paneel* het veld **Misdaad omschrijving** uit de tabel **Registraties (gemeente)** naar het **X-as** veld. Plaats het veld *onder* de *Geografie* hiërarchie.
 
-De grafiektitel is nu *Internet Total Sales by Country Region Name*, en we kunnen via een *drilldown* verder afdalen door de *Category* hiërarchie, op basis van het land dat we bekijken.
+We kunnen nu via een *drilldown* verder afdalen door de *Geogradie* hiërarchie, naar de verschillende misdaadtypen die in een gemeente zijn geregistreerd.
 
-![Drilldown per market](img/10-drilldown-per-market.png)
-
-### Go to the next level
+### Naar het volgende niveau
 
 Naast een *drilldown* kun je ook een niveau afdalen in de hiërarchie zonder dat je je specifiek beperkt tot één categorie. Dit kan met de rechter twee knoppen:
 
 ![Go to next level buttons](img/11-go-to-next-level-buttons.png)
 
-Ga in de linkergrafiek naar het hoogste niveau (dus *Country Region Name*), en probeer de laatste twee knoppen uit. Wat is het verschil?
+Ga in de linkergrafiek naar het hoogste niveau (dus *Regio naam*), en probeer de laatste twee knoppen uit. Wat is het verschil?
 
 ### Filteren van andere visuals
 
-Zoals je wellicht opgevallen is, zorgt een *drilldown* er ook voor dat andere grafieken gefilterd worden: wanneer je in de linkergrafiek een land selecteert, verandert de grafiek *Internet Total Sales by Year* ook mee:
+Zoals je wellicht opgevallen is, zorgt een *drilldown* er ook voor dat andere grafieken gefilterd worden: wanneer je in de linkergrafiek een regio selecteert, verandert de grafiek *Aantal geregistreerde misdaden per Jaar* ook mee.
 
-![Drilldown filtering](img/12-drilldown-filter.png)
+Standaard werkt de filtering van een *drilldown* gelijk aan de filtering van een *selectie* (die je bijvoorbeeld via **Interacties bewerken** ingesteld hebt) binnen de grafiek. Je kunt de drilldown-filtering echter ook uitschakelen.
 
-Standaard werkt de filtering van een *drilldown* gelijk aan de filtering van een *selectie* (die je bijvoorbeeld via **Edit interactions** ingesteld hebt) binnen de grafiek. Je kunt de drilldown-filtering echter ook uitschakelen.
-
-* Selecteer de linkergrafiek (*Internet Total Sales by Country Region Name*)
-* Open het menu *Format*
-* Naast de knop *Edit interactions* staat een pulldown menu, wijzig daar *Entire Page* in *Selected visual*.
+* Selecteer de linkergrafiek (*Aantal geregistreerde misdaden per Regio naam*)
+* Open het menu *Indeling*
+* Naast de knop *Interacties bewerken* staat een dropdown menu, wijzig daar *Volledige pagina* in *Geselecteerde visual*.
 
 Nu zorgt een *drilldown* niet meer automatisch voor een filtering binnen een andere grafiek. Selecties werken nog wel.
 
