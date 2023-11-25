@@ -56,7 +56,7 @@ In de datamodellen die we vanuit een dataset of Power BI-model afnemen, wordt da
 * Maak een nieuwe pagina
 * Selecteer de *meting* **Aantal geregistreerde misdaden**
 * Selecteer de *hiërarchie* **Geografie** in de tabel **Geografie**
-* Klik nu in de visualisatie twee keer op het pijltje naar boven (linkerbovenhoek)
+* Klik nu in de visualisatie twee keer op het pijltje naar boven (rechterbovenhoek)
 * Bekijk de grafiek-eigenschappen. 
   * Onder "X-as" staat *Geografie*
   * Je ziet hier diverse niveaus (Regio naam, Veiligheidsregio naam, gemeente naam), toch is in de grafiek momenteel enkel het hoogste niveau zichtbaar.
