@@ -14,27 +14,25 @@ Dit "doorklikken" wordt in Power BI **Onderzoeken** genoemd. In [module 3](../03
 
 Wanneer je *onderzoeken* binnen een rapport mogelijk wilt maken, moet je de volgende zaken regelen:
 
-1. Er moet een pagina zijn wat het *doel* van je onderzoek is.
+*. Er moet een pagina zijn wat het *doel* van je onderzoek is.
    * In het voorbeeld hierboven: de pagina "Veiligheidsregio details"
-2. Op deze *doel*pagina moet je een "analyseveld" instellen. In het voorbeeld hierboven is dit de naam van de veiligheidsregio: wanneer je die ergens in het rapport tegenkomt, kun je in twee klikken naar de detail-pagina navigeren, wat dan automatisch gefilterd is op de betreffende categorie.
+*. Op deze *doel*pagina moet je een "analyseveld" instellen. In het voorbeeld hierboven is dit de naam van de veiligheidsregio: wanneer je die ergens in het rapport tegenkomt, kun je in twee klikken naar de detail-pagina navigeren, wat dan automatisch gefilterd is op de betreffende categorie.
    * In het voorbeeld hierboven is het *analyseveld* `Veiligheidsregio naam`.
 
 ### Drillthrough instellen in je rapport
 
-* Voeg een pagina toe met de naam "Veiligheidsregio details"
-* Voeg hierop een *Kaart visual* toe (![Icon of map visual](img/02-map-visual.png)). Configureer deze als volgt:
-  * **Location**: **State Province Name** (tabel *Geography*)
-  * **Bubble size**: **Internet Total Sales** (tabel *Internet Sales*)
-* Voeg nu ook een zgn. "Treemap" toe voor *Internet Total Sales by Product Category Name*:
-  * Gebruik hier het veld **Product Category Name** uit de tabel **Product Category**
-![Voorbeeld treemap](img/03-treemap.png)
-* Klik ergens op het canvas zodat er geen *visual* meer geselecteerd is.
-* In het **Visualizations paneel** Onder het kopje **Drillthrough** vind je nu een vakje "Add drillthrough filters here". Sleep hier het veld **Country Region Name** heen (tabel *Geography*)
-* Ga terug naar de pagina *Page 2*, en rechtsklik op één van de landen in de grafiek. Als het goed is heb je nu een submenu *Drillthrough* naar de *Country Details*-pagina
+1. Voeg een pagina toe met de naam "Veiligheidsregio details"
+1. Voeg hierop een *Kaart visual* toe (![Icon of map visual](img/02-kaart-visual.png)). Configureer deze als volgt:
+  * **Locatie**: **Gemeente naam met land** (tabel *Geografie*)
+  * **Belgrootte**: **Aantal geregistreerde misdaden** (tabel *Registraties (gemeente)*)
+1. Voeg nu ook een zgn. "Treemap" visual toe voor *Aantal geregistreerde misdaden per Misdaad omschrijving*:
+1. Klik ergens op het canvas zodat er geen *visual* meer geselecteerd is.
+1. In het **Visualisaties** paneel onder het kopje **Onderzoeken** vind je nu een vakje "Analysevelden hier toevoegen". Sleep hier het veld **Veiligheidsregio naam** heen (tabel *Geografie*)
+1. Ga terug naar de pagina *Geregistreerde misdaden*, en rechtsklik op één van de veiligheidsregio's in de grafiek. Als het goed is heb je nu een submenu *Onderzoeken* naar de *Veiligheidsregio details*-pagina
 
-Om het af te maken, kun je nu de **Country Details** pagina verbergen (rechtsklik op de tab, kies **Hide Page**). Publiceer het rapport naar een workspace en bekijk het resultaat.
+    Om het af te maken, kun je nu de **Veiligheidsregio details** pagina verbergen (rechtsklik op de tab, kies **Verbergen**). Publiceer het rapport naar een workspace en bekijk het resultaat.
 
-Probeer nu zelf een tweede drillthrough-pagina "Product Category Details" aan te maken waarbij je alle gegevens binnen een productcategorie op een rij zet. Filter op basis van het veld **Product Subcategory Name** (tabel *Product Subcategory*). Geef de volgende zaken weer:
+    Probeer nu zelf een tweede onderzoeks-pagina "Misdaad details" aan te maken waarbij je alle gegevens over een misdaadtype op een rij zet. Filter op basis van het veld **Misdaad code** (tabel *Registraties (Gemeente)*). Geef de volgende zaken weer:
 
 *Bij elk punt staat wat extra uitdaging - deze hoef je niet uit te voeren. Mocht alles je echter gemakkelijk afgaan en je wilt wat meer de grenzen van Power BI opzoeken, dan kun je je hier even in vastbijten*
 
