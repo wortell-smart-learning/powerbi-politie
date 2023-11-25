@@ -109,9 +109,9 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
 1. Maak een nieuwe pagina, genaamd 'Geregistreerde misdaden'
 1. Schakel naar deze nieuwe pagina
-1. Maak een grafiek waarin je het **Aantal geregistreerde misdaden** uitzet tegen de *Regio naam** (*neem deze uit de dimensie Geografie*!)
+1. Maak een grafiek waarin je het **Aantal geregistreerde misdaden** uitzet tegen de **Veiligheidsregio naam** (*neem deze uit de dimensie Geografie*!)
 1. Selecteer deze grafiek.
-1. Verander de **Filters op deze visual** voor **Regio naam** in een **Populairste N** filter
+1. Verander de **Filters op deze visual** voor **Veiligheidsregio naam** in een **Populairste N** filter
 
     ![Top N filtering](img/08-populairste-n-filter.png)
 
@@ -120,10 +120,10 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Probeer nu zelf een **Kaart visual** toe te voegen (dit is het "witte" wereldbolletje onder **Visualisaties**). Zet hierin de **Gemeente naam met land** uit tegen **Aantal geregistreerde misdaden**. Maak de grafiek vervolgens breed genoeg zodat alle gemeentes waar geregistreerd zijn duidelijk zichtbaar zijn.
 1. Voeg nu een **Tabel visual** toe met daarin de volgende velden:
     * **Regio naam**
+    * **Veiligheidsregio naam**
     * **Gemeente naam**
     * **Aantal geregistreerde misdaden**
     * **Aantal aanklachten ingediend**
-    * **Aantal aanklachten ingediend online**
 1. Plaats de grafiek en tabel direct onder elkaar, en maak ze exact even breed.
 1. Voeg nu een titel toe aan de pagina, door een **Tekstvak** te kiezen uit het **Start** lint. Maak deze tekst groter (bijv. 32), en vul de tekst **Geregistreerde misdaden** in. Plaats deze volledig linksbovenin het rapport
 1. Voeg een **Kaart visual** toe (icoontje met 123) voor het veld **Aantal geregistreerde misdaden** en voeg in de opmaak de titel **Selectie** toe
