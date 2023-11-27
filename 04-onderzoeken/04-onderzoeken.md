@@ -36,17 +36,15 @@ Wanneer je *onderzoeken* binnen een rapport mogelijk wilt maken, moet je de volg
 
 *Bij elk punt staat wat extra uitdaging - deze hoef je niet uit te voeren. Mocht alles je echter gemakkelijk afgaan en je wilt wat meer de grenzen van Power BI opzoeken, dan kun je je hier even in vastbijten*
 
-1. Verkopen per man / vrouw / getrouwd / ongetrouwd
-   * Extra uitdaging: voeg bijbehorende titels toe binnen de visual ("Married men", "Single men", etc.)
-2. Verkopen per productkleur
-   * Eerste extra uitdaging: geef alleen de 5 bestverkopende kleuren weer
-   * Tweede extra uitdaging: laat de kleur bepaald worden door de productkleur
-3. Internet Total Sales per jaar
-4. Internet Total Units per jaar
+1. Aantal geregistreerde misdaden per type stedelijkheid
+   * Extra uitdaging: voeg bijbehorende titels toe binnen de visual ("Zeer sterk stedelijk", "Sterk / matig stedelijk", etc.)
+2. Aantal geregistreerde misdaden per 1000 inwoners per Gemeente naam
+   * Extra uitdaging: geef alleen de 5 gemeenten weer die het hoogst scoren
+3. Aantal geregistreerde misdaden, Aantal ingediende aanklachten en Aantal ingediende aanklachten online per datum
 
-![Voorbeeld resultaat opdracht](img/05-drillthrough-within-report-final.png)
+![Voorbeeld resultaat opdracht](img/03-voorbeeld.png)
 
-Wanneer je drillthrough pagina correct werkt, zou je vanaf pagina "Product Sales" nu een drillthrough moeten kunnen maken naar "Product Category Details"
+Wanneer je drillthrough pagina correct werkt, zou je vanaf pagina "Pagina 1" nu een drillthrough moeten kunnen maken naar "Misdaad details".
 
 ## Drillthrough tussen meerdere rapporten
 
@@ -57,65 +55,27 @@ Om Drillthrough tussen meerdere rapporten werkend te krijgen hebben we (minstens
 * Het *bron-rapport*. Dit is het rapport waar je vandaan komt (hier "doe" je een drillthrough)
 * Het *doel-rapport*. Dit is het rapport waar je terecht komt na een drillthrough.
 
-Maak nu eerst via *File*, *New* een nieuw rapport dat verbinding maakt met de dataset AdventureWorks in je eigen workspace en sla dit op onder de naam *module-4-drillthrough-report*.
+Maak nu eerst via *File*, *New* een nieuw rapport dat verbinding maakt met de dataset in je eigen workspace en sla dit op onder de naam *module-4-drillthrough-rapport*.
 
-Maak in dit nieuwe rapport een drillthrough filter per **Year** (tabel *Date*, in de hierarchy *Calendar*). Let erop dat je hier instelt dat je **Year** gebruiken moet als *categorie*:
+Maak in dit nieuwe rapport een drillthrough filter per **Provincie naam** (tabel *Geografie*).
 
-![Use calendar year as drillthrough per category](img/04-calendar-year-drillthrough-as-category.png)
+Je kunt vervolgens in het lijstje onder deze instelling een provincie kiezen die je *nu* wilt weergeven (feitelijk filter je de data op "alleen de data van provincie X"). Zodra je via een *drillthrough* op dit rapport belandt, wordt dit filter vervangen door de provincie waarmee je de drillthrough uitvoert. Het toevoegen van dit filter geeft je echter een beter gevoel over hoe de cijfers eruit zou zien bij een drillthrough van (bijvoorbeeld) Gelderland.
 
-Je kunt vervolgens in het lijstje onder deze instelling een jaar kiezen dat je *nu* wilt weergeven (feitelijk filter je de data op "alleen de data van jaar X"). Zodra je via een *drillthrough* op dit rapport belandt, wordt dit filter vervangen door het jaartal waarmee je de drillthrough uitvoert. Het toevoegen van dit filter geeft je echter een beter gevoel over hoe de cijfers eruit zou zien bij een drillthrough van (bijvoorbeeld) 2012.
-
-Vul vervolgens het rapport met inzichten over een jaar:
-
-1. Het verloop van verkopen door het jaar heen (let op dat deze correct gesorteerd is)
-2. De verhouding tussen de verkopen t.o.v. een kwartaal geleden
+Vul vervolgens het rapport met inzichten over een provincie.
 
 Stel vervolgens de drillthrough reporting in:
 
 * In het **bron-rapport** (waar de drillthrough vandaan komt)
-  * **File** -> **Options and settings** -> **Options**
-  * Onder **Current file**, open **Report settings**
-  * Zet het vinkje bij **Allow visuals in this report to use drillthrough targets from other reports**  
-![Enable cross report drillthrough in source report](img/06-enable-cross-report-drillthrough-source.png)
+  * **Bestand** -> **Opties en instellingen** -> **Opties**
+  * Onder **Huidig bestand**, open **Rapportinstellingen**
+  * Zet het vinkje bij **Visuals in dit rapport toestaan om drillthroughdoelen van andere rapporten te gebruiken**
 * In het **doel-rapport** (waar de drillthrough naartoe gaat):
-  * Zet het vinkje **Cross-report** bij je **Drillthrough filter**  
-![Enable cross report drillthrough in target report](img/07-enable-cross-report-drillthrough-target.png)
-
+  * Zet het vinkje **Kruisrapport** bij je **Analyseveld**
+  * 
 Publiceer het rapport, en test of de drillthrough over rapporten heen werkt in de Power BI Portal.
 
 ## Bonus-opgaven
 
 ### Aanpassen drillthrough-naam
 
-Standaard heeft de drillthrough de naam `Page1 [naam-van-oorspong-rapport]`. Zorg ervoor dat hier een zinnige naam komt te staan, die de lading dekt.
-
-![Deze beschrijving kan beter...](img/09-onzinnige-naam.png)
-
-## Oplossing
-
-Hier vind je de eindpunten van deze opdracht: [04-01-Solution.pbit](04-01-Solution.pbit) en [04-02-Solution.pbit](04-02-Solution.pbit)
-
-## Video
-
-Hier vind je de [Walkthrough video](https://vimeo.com/584747083/d8e167c13e)
-
-
-## Volgende modules
-
-De volgende module is Module 5: Self-service reporting. We beginnen hier met [CSV-bestanden inladen](../05-self-service-reporting/05-csv-inladen.md).
-
-Hieronder vind je een overzicht van alle modules:
-
-1. [Introductie Power BI Desktop](../01-introduction/01-introduction-powerbi-desktop.md)
-2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-reporting-on-dataset/02-reporting-on-dataset.md)
-3. [Visuals en interactie](../03-visuals-and-interaction/03-visuals-and-interaction.md)
-4. [Drillthrough](../04-drillthrough/04-drillthrough.md) (huidige module)
-5. Self-service reporting
-   * [CSV-bestanden inladen](../05-self-service-reporting/05-csv-inladen.md)
-   * [SQL data inladen](../05-self-service-reporting/06-sql-inladen.md)
-6. Data Modeling 101
-   * [Relaties](../06-data-modeling-101/07-relaties.md)
-   * [Opschonen van je datamodel](../06-data-modeling-101/08-opschonen.md)
-7. [Introductie Power Query (GUI)](../07-power-query-gui/09-power-query.md)
-8. [Publiceren en samenwerken in workspaces](../08-publishing-and-collaboration-in-workspaces/10-publishing-and-collaboration-in-workspaces.md)
-9. [Calculated Columns met DAX](../09-dax/11-calc-columns.md)
+Standaard heeft de drillthrough de naam `Pagina1 [naam-van-oorspong-rapport]`. Zorg ervoor dat hier een zinnige naam komt te staan, die de lading dekt.
