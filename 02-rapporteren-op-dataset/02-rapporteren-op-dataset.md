@@ -158,6 +158,6 @@ De volgende module is [Module 3: Visuals en interactie](../03-visualisaties-en-i
 Hieronder vind je een overzicht van alle modules:
 
 1. [Introductie Power BI Desktop](../01-introductie/01-introductie-powerbi-desktop.md) (huidige module)
-2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-reporteren-op-dataset/02-reporteren-op-dataset.md)
+2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-rapporteren-op-dataset/02-rapporteren-op-dataset.md)
 3. [Visuals en interactie](../03-visuals-en-interactie/03-visuals-en-interactie.md)
 4. [Onderzoeken](../04-onderzoeken/04-onderzoeken.md)
