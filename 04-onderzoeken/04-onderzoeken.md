@@ -91,3 +91,15 @@ Publiceer het rapport, en test of de drillthrough over rapporten heen werkt in d
 ### Aanpassen drillthrough-naam
 
 Standaard heeft de drillthrough de naam `Pagina1 [naam-van-oorspong-rapport]`. Zorg ervoor dat hier een zinnige naam komt te staan, die de lading dekt.
+
+## Volgende modules
+
+Dit is de laatste module die op politiedata is uitgewerkt. Meer modules op AdventureWorks data zijn te vinden in onze algemene [Power BI training](https://wortell-smart-learning.github.io/powerbi-training/).
+
+Hieronder vind je een overzicht van alle modules:
+
+1. [Introductie Power BI Desktop](../01-introductie/01-introductie-powerbi-desktop.md)
+2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-rapporteren-op-dataset/02-rapporteren-op-dataset.md)
+3. [Visuals en interactie](../03-visuals-en-interactie/03-visuals-en-interactie.md)
+4. [Onderzoeken](../04-onderzoeken/04-onderzoeken.md) (huidige module)
+
