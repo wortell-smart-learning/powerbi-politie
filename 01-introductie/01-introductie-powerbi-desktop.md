@@ -61,5 +61,5 @@ De volgende module is [Module 2: Rapporteren op de dataset: Power BI als rapport
 
 1. [Introductie Power BI Desktop](../01-introductie/01-introductie-powerbi-desktop.md) (huidige module)
 2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-reporteren-op-dataset/02-reporteren-op-dataset.md)
-3. [Visuals en interactie](../03-visualisaties-en-interactie/03-visualisaties-and-interactie.md)
+3. [Visuals en interactie](../03-visuals-en-interactie/03-visuals-en-interactie.md)
 4. [Onderzoeken](../04-onderzoeken/04-onderzoeken.md)
