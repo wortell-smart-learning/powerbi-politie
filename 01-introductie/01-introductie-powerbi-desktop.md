@@ -33,26 +33,27 @@ Het scherm ziet er nu als volgt uit:
 Merk de volgende zaken op:
 
 1. Linksboven zie je drie knoppen, waarmee je tussen *drie weergaven* van je Power BI model kunt schakelen:
-   * **Report**
-   * **Data**
+   * **Rapport**
+   * **Tabel**
    * **Model**
-2. Bovenin zie je een **ribbon** (of "lint"), die net werkt als in Office kent. De lint heeft zeven onderdelen:
-   * **File** (menu): Vergelijkbaar met het gelijknamige menu uit Office: opslaan, exporteren, printen en instellingen
-   * **Home**: Hier staan de meeste "basis" zaken die je nodig hebt voor het maken van Power BI-rapportages
-   * **Insert**: Diverse zaken die je toe kunt voegen aan je rapportage
-   * **Modeling**: Hier staan specifieke zaken voor het inrichten van je datamodel
-   * **View**: Hier kun je visuele hulpmiddelen aan- en uitzetten, en schakelen tussen de mobiele weergave en de desktop-weergave
+2. Bovenin zie je een **lint**, die net werkt als in Office kent. Het lint heeft acht onderdelen:
+   * **Bestand**: Vergelijkbaar met het gelijknamige menu uit Office: opslaan, exporteren, printen en instellingen
+   * **Start**: Hier staan de meeste "basis" zaken die je nodig hebt voor het maken van Power BI-rapportages
+   * **Invoegen**: Diverse zaken die je toe kunt voegen aan je rapportage
+   * **Model maken**: Hier staan specifieke zaken voor het inrichten van je datamodel
+   * **Weergeven**: Hier kun je visuele hulpmiddelen aan- en uitzetten, en schakelen tussen de mobiele weergave en de desktop-weergave
+   * **Optimaliseren**: Hier kun je hulpmiddelen vinden om de performance van jouw raport te beoordelen
    * **Help**: Dit is een bijzonder ingewikkeld concept, dat voor nu te ver reikt om uit te leggen ;-)
-   * **External Tools** wordt niet altijd weergegeven (hier op de screenshot wel), maar dit geeft de mogelijkheid om met andere software verder te bouwen aan Power BI-rapporten of -datamodellen
-3. Aan de rechterzijde (paars omlijnd hierboven) zie je twee _panes_: **Visualizations** en **Filters**. Deze kun je in- en uitklappen door op de titel te klikken (try!). Er zijn drie grote onderdelen benoemd:
+   * **Externe hulpprogramma's** wordt niet altijd weergegeven (hier op de screenshot wel), maar dit geeft de mogelijkheid om met andere software verder te bouwen aan Power BI-rapporten of -datamodellen
+3. Aan de rechterzijde (paars omlijnd hierboven) zie je twee _panelen_: **Visualisaties** en **Filters**. Deze kun je in- en uitklappen door op de titel te klikken (Probeer het!). Er zijn drie grote onderdelen benoemd:
    * **Filters**: filters die van toepassing zijn op het huidige rapport, de huidige pagina, of de huidige visual
-   * **Visualizations**: De verschillende visualisaties die je in een rapport kunt gebruiken.
-   * **Fields** / **Format**: Hier zie je geen tekst van, maar dit zijn twee icoontjes waarmee je veel eigenschappen van visuals kunt instellen:  
+   * **Visualisaties**: De verschillende visualisaties die je in een rapport kunt gebruiken.
+   * **Gegevens** / **Format**: Hier zie je geen tekst van, maar dit zijn twee icoontjes waarmee je veel eigenschappen van visuals kunt instellen:  
    ![Fields en Format icons](img/fields-format.png)
-   * **Drill trough**: Bijzondere drillthrough-filters (meer hierover later)
-4. Uiterst rechts op het scherm (blauw omrand) is het **Fields** pane. Ook deze kun je in- en uitklappen. Hier zie je een lijst van alle tabellen, kolommen en measures die in je datamodel aanwezig zijn
-5. Binnen de Report-weergave, zie je onderin de verschillende **pagina's** van een rapport
-6. Binnen de Report-weergave is een groot wit vel aanwezig - de **canvas**. Hierop kun je je rapport vormgeven. De zwarte stippellijnen geven de randen aan.
+   * **Onderzoekenh**: Bijzondere drillthrough-filters (meer hierover later)
+4. Uiterst rechts op het scherm (blauw omrand) is het **Gegevens** paneel. Ook deze kun je in- en uitklappen. Hier zie je een lijst van alle tabellen, kolommen en metingen die in je datamodel aanwezig zijn
+5. Binnen de Rapportweergave, zie je onderin de verschillende **pagina's** van een rapport
+6. Binnen de Rapportweergave is een groot wit vel aanwezig - het **canvas**. Hierop kun je je rapport vormgeven. De zwarte stippellijnen geven de randen aan.
 
 ## Volgende modules
 
@@ -61,13 +62,4 @@ De volgende module is [Module 2: Rapporteren op de dataset: Power BI als rapport
 1. [Introductie Power BI Desktop](../01-introductie/01-introductie-powerbi-desktop.md) (huidige module)
 2. [Rapporteren op Power BI Datasets en eerste visualisatie](../02-reporteren-op-dataset/02-reporteren-op-dataset.md)
 3. [Visuals en interactie](../03-visualisaties-en-interactie/03-visualisaties-and-interactie.md)
-4. [Drillthrough](../04-drillthrough/04-drillthrough.md)
-5. Self-service reporting
-   * [CSV-bestanden inladen](../05-self-service-reporting/05-csv-inladen.md)
-   * [Open data inladen](../05-self-service-reporting/06-opendata-inladen.md)
-6. Data Modeling 101
-   * [Relaties](../06-datamodelleren-101/07-relaties.md)
-   * [Opschonen van je datamodel](../06-datamodelleren-101/08-opschonen.md)
-7. [Introductie Power Query (GUI)](../07-power-query-gui/09-power-query.md)
-8. [Publiceren en samenwerken in workspaces](../08-publiceren-en-samenwerken-in-werkruimten/10-publiceren-en-samenwerken-in-werkruimten.md)
-9. [Calculated Columns met DAX](../09-dax/11-berekende-kolommen.md)
+4. [Onderzoeken](../04-onderzoeken/04-onderzoeken.md)
