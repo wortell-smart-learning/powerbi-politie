@@ -38,6 +38,8 @@ Verander nu het rapport op de pagina **Geregistreerde misdaden** zodanig dat:
 * Interactie vanuit de andere visuals naar deze kaart ingesteld staan op **Geen**. Deze cijfers veranderen dus niets, ongeacht je selectie.
 * Wanneer je rechtsonder in de tabel iets selecteert (bijv. "Nijmegen"), wordt de landkaart niet gefilterd (geen interactie). Een selectie vanuit de slicer heeft wel effect op de landkaart. Hier zijn dus dan alleen de misdaden van die betreffende regio('s) zichtbaar.
 
+    ![Kaart zonder interactie](img/02-extra-kaart.png)
+
 Controleer de resultaten door "Oost-Nederland" te selecteren in de grafiek. Het landelijke cijfer moet niet veranderen. De landkaart laat alleen de gemeenten in Oost-Nederland zien.
 Selecteer in de tabel de gemeente "Apeldoorn". De landkaart laat nog steeds heel Oost-Nederland zien. De cijfers van Apeldoorn zijn gemarkeerd in de grafiek. 
 
