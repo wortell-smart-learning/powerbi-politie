@@ -8,7 +8,7 @@ Ga verder met het bestand dat je in de vorige module hebt gemaakt.
 
 Binnen de **Politie** is je leidinggevende bijzonder te spreken over de geografische mogelijkheden van Power BI. Het is echter niet heel handig om alle geografische achtergrondinformatie over een regio in elk rapport te herhalen. Het liefst zou ze bij bijvoorbeeld een uitschieter in registraties in een bepaalde veiligheidsregio willen kunnen "doorklikken" naar alle informatie van die veiligheidsregio. Bijvoorbeeld de trend in misdaden de afgelopen jaren, de verdeling naar type misdaad in de gemeenten, etc..
 
-Dit "doorklikken" wordt in Power BI **Onderzoeken** genoemd. In [module 3](../03-visuals-and-interaction/03-visuals-and-interaction.md) hebben we al gekeken naar de *drilldown*. *Onderzoeken* houdt in de basis in dat je een getal onder de loep neemt op een andere pagina of in een ander rapport. Op deze manier kun je eenvoudig de context bekijken - bijvoorbeeld van de misdaden binnen een bepaalde veiligheidsregio.
+Dit "doorklikken" wordt in Power BI **Onderzoeken** genoemd. In [module 3](../03-visuals-en-interactie/03-visuals-en-interactie.md) hebben we al gekeken naar de *drilldown*. *Onderzoeken* houdt in de basis in dat je een getal onder de loep neemt op een andere pagina of in een ander rapport. Op deze manier kun je eenvoudig de context bekijken - bijvoorbeeld van de misdaden binnen een bepaalde veiligheidsregio.
 
 ## Onderzoeken binnen een rapport
 
@@ -25,10 +25,22 @@ Wanneer je *onderzoeken* binnen een rapport mogelijk wilt maken, moet je de volg
 1. Voeg hierop een *Kaart visual* toe (![Icon of map visual](img/02-kaart-visual.png)). Configureer deze als volgt:
   * **Locatie**: **Gemeente naam met land** (tabel *Geografie*)
   * **Belgrootte**: **Aantal geregistreerde misdaden** (tabel *Registraties (gemeente)*)
+
+  ![Kaart visual](img/01-kaart-visual.png)
+
 1. Voeg nu ook een zgn. "Treemap" visual toe voor *Aantal geregistreerde misdaden per Misdaad omschrijving*:
+
+  ![Treemap visual](img/01-treemap-visual.png)
+  Deze visual ziet er nu nog overweldigend uit, maar zal gefilterd worden.
+   
 1. Klik ergens op het canvas zodat er geen *visual* meer geselecteerd is.
 1. In het **Visualisaties** paneel onder het kopje **Onderzoeken** vind je nu een vakje "Analysevelden hier toevoegen". Sleep hier het veld **Veiligheidsregio naam** heen (tabel *Geografie*)
+
+  ![Analyseveld toevoegen](img/01-analyseveld.png)
+   
 1. Ga terug naar de pagina *Geregistreerde misdaden*, en rechtsklik op één van de veiligheidsregio's in de grafiek. Als het goed is heb je nu een submenu *Onderzoeken* naar de *Veiligheidsregio details*-pagina
+
+  ![Onderzoeken](img/01-onderzoeken.png)
 
     Om het af te maken, kun je nu de **Veiligheidsregio details** pagina verbergen (rechtsklik op de tab, kies **Verbergen**). Publiceer het rapport naar een workspace en bekijk het resultaat.
 
