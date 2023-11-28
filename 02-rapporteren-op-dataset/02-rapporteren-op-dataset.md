@@ -78,6 +78,8 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
     Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
 
+    ![Eerste visualisatie](img/02-eerste-visualisatie.png)  
+
     ### Aantal aanklachten ingediend Misdaden per Gebeurtenis code
 
 1. Probeer nu stappen 8 en 9 opnieuw uit te voeren, maar maak deze keer de grafiek te maken voor **Aantal aanklachten ingediend** en **Gebeurtenis code**
@@ -97,9 +99,13 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 1. Sleep het veld **Stedelijkheid naam** uit tabel **Geografie** vanuit het **Gegevens** paneel naar het kopje **Legenda**
 1. *Resize* de grafiek zodat deze netjes wordt weergegeven:
 
+    ![Tweede visualisatie](img/02-tweede-visualisatie.png)     
+
     ## Interactie tussen grafieken
 
     Klik op één van de provincie's in de eerste grafiek. Zoals je ziet verandert de andere grafiek mee.
+
+    ![Interactie](img/02-interactie.png)     
 
     ## Hands-on: rapportage maken
 
@@ -117,7 +123,13 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
 1. Filter deze op de top 6, sleep het veld "**Aantal geregistreerde misdaden** naar het kopje **Op waarde**.
 1. Klik **Filter toepassen**
+
+    ![Derde visualisatie](img/02-derde-visualisatie.png) 
+
 1. Probeer nu zelf een **Kaart visual** toe te voegen (dit is het "witte" wereldbolletje onder **Visualisaties**). Zet hierin de **Gemeente naam met land** uit tegen **Aantal geregistreerde misdaden**. Maak de grafiek vervolgens breed genoeg zodat alle gemeentes waar geregistreerd zijn duidelijk zichtbaar zijn.
+
+    ![Vierde visualisatie](img/02-vierde-visualisatie.png) 
+
 1. Voeg nu een **Tabel visual** toe met daarin de volgende velden:
     * **Regio naam**
     * **Veiligheidsregio naam**
