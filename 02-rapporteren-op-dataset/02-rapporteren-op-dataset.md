@@ -153,7 +153,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
 ## Volgende modules
 
-De volgende module is [Module 3: Visuals en interactie](../03-visualisaties-en-interactie/03-visualisaties-en-interactie.md).
+De volgende module is [Module 3: Visuals en interactie](../03-visuals-en-interactie/03-visuals-en-interactie.md).
 
 Hieronder vind je een overzicht van alle modules:
 
