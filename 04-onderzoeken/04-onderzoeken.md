@@ -28,8 +28,11 @@ Wanneer je *onderzoeken* binnen een rapport mogelijk wilt maken, moet je de volg
     
     ![Kaart visual](img/01-kaart-visual.png)
 
-1. Voeg nu ook een zgn. "Treemap" visual toe voor *Aantal geregistreerde misdaden per Misdaad omschrijving*:
-
+1. Voeg nu ook een zgn. "Treemap" visual toe voor *Aantal geregistreerde misdaden en Eerste Misdaad omschrijving per Misdaad code*:
+    * **Categorie**: **Misdaad code**
+    * **Waarden**: **Aantal geregistreerde misdaden**
+    * **Tooltips**: **Misdaad omschrijving**
+    
     ![Treemap visual](img/01-treemap-visual.png)
     Deze visual ziet er nu nog overweldigend uit, maar zal gefilterd worden.
    
