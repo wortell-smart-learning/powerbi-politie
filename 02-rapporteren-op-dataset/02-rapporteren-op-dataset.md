@@ -73,7 +73,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
     Deze is redelijk eenvoudig:
 
-1. Zoek in het **Gegevens** paneel via de zoekbox de *meting* **Aantal geregistreerde misdaden**. Klik deze aan.  
+1. Zoek in het **Gegevens** paneel via de zoekbox de *meting* **Aantal geregistreerde misdaden**. Vink deze aan.  
 1. Zoek nu naar "Provincie", en vink **Provincie naam** aan.
 
     Zoals je ziet, gaat deze grafiek eigenlijk automatisch goed. En hoewel de hoeveelheid tabellen en kolommen erg groot kan zijn, kun je eenvoudig zoeken in de lijst met velden.
