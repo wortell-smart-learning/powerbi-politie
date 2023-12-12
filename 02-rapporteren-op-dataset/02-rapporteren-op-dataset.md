@@ -126,7 +126,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
     ![Derde visualisatie](img/02-derde-visualisatie.png) 
 
-1. Probeer nu zelf een **Kaart visual** toe te voegen (dit is het "witte" wereldbolletje onder **Visualisaties**). Zet hierin de **Gemeente naam met land** uit tegen **Aantal geregistreerde misdaden**. Maak de grafiek vervolgens breed genoeg zodat alle gemeentes waar geregistreerd zijn duidelijk zichtbaar zijn.
+1. Probeer nu zelf een **ArcGIS visual** toe te voegen (midden onderin onder **Visualisaties**). Zet hierin de **Gemeente naam met land** uit tegen **Aantal geregistreerde misdaden**. Maak de grafiek vervolgens breed genoeg zodat alle gemeentes waar geregistreerd zijn duidelijk zichtbaar zijn.
 
     ![Vierde visualisatie](img/02-vierde-visualisatie.png) 
 
