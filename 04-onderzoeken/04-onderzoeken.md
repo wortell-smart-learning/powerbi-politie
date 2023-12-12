@@ -47,7 +47,7 @@ Wanneer je *onderzoeken* binnen een rapport mogelijk wilt maken, moet je de volg
 
     Om het af te maken, kun je nu de **Veiligheidsregio details** pagina verbergen (rechtsklik op de tab, kies **Verbergen**). Publiceer het rapport naar een workspace en bekijk het resultaat.
 
-    Probeer nu zelf een tweede onderzoeks-pagina "Misdaad details" aan te maken waarbij je alle gegevens over een misdaadtype op een rij zet. Filter op basis van het veld **Misdaad code** (tabel *Registraties (Gemeente)*). Geef de volgende zaken weer:
+    Probeer nu zelf een tweede onderzoeks-pagina "Misdaad details" aan te maken waarbij je alle gegevens over een misdaadtype op een rij zet. Gebruik als analyseveld het veld **Misdaad code** (tabel *Registraties (Gemeente)*). Geef de volgende zaken weer:
 
     *Bij elk punt staat wat extra uitdaging - deze hoef je niet uit te voeren. Mocht alles je echter gemakkelijk afgaan en je wilt wat meer de grenzen van Power BI opzoeken, dan kun je je hier even in vastbijten*
 
