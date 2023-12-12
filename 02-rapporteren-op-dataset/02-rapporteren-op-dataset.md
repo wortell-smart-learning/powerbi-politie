@@ -49,7 +49,7 @@ Voordat we met deze dataset van start kunnen, moet je de dataset op jouw eigen P
 
 1. Open **Power BI Desktop**
 1. Maak verbinding met een **Power BI Dataset**:
-    * Klik op het pijltje onder "Get Data"
+    * Klik op het pijltje onder "Gegevens ophalen"
     * Kies **Power BI Datasets**
     * Kies het model **dataset**
     * Klik op **Connect**
